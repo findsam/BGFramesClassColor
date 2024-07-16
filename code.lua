@@ -22,6 +22,7 @@ frame:SetScript("OnEvent", function(self, event, ...)
             texture:SetSize(width, height * 1.5)  
             texture:SetPoint("LEFT", frame.healthbar, "LEFT", 0, 14)     
             texture:SetTexture("Interface\\Buttons\\WHITE8X8")
+            texture:SetDrawLayer("BACKGROUND", -1) 
             frame.CCBackgroundNameFrame = texture
         end
     else
